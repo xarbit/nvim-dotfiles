@@ -31,9 +31,13 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    -- { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- import/override with your plugins
     { import = "plugins" },
+    {
+      "olimorris/onedarkpro.nvim",
+      priority = 1000, -- Ensure it loads first
+    },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -63,6 +67,9 @@ require("lazy").setup({
   },
 })
 
--- colorscheme catppuccin
-vim.cmd.colorscheme("catppuccin-mocha")
+-- colorscheme
+-- vim.cmd.colorscheme("catppuccin-mocha")
 -- vim.cmd.colorscheme("catppuccin-frappe")
+
+-- vim.cmd.colorscheme("onedark_vivid")
+vim.cmd("colorscheme onedark")
