@@ -25,18 +25,28 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.docker" },
-    { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.terraform" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- { import = "lazyvim.plugins.extras.ui.edgy" },
+    { import = "lazyvim.plugins.extras.ui.mini-starter" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.lsp.none-ls" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-    -- { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.editor.aerial" },
+    { import = "lazyvim.plugins.extras.editor.leap" },
+    { import = "lazyvim.plugins.extras.editor.mini-files" },
+    { import = "lazyvim.plugins.extras.editor.navic" },
+    { import = "lazyvim.plugins.extras.editor.symbols-outline" },
+
     -- import/override with your plugins
     { import = "plugins" },
     {
       "olimorris/onedarkpro.nvim",
-      priority = 1000, -- Ensure it loads first
+      priority = 1000, -- Ensure it loads firstc
     },
   },
   defaults = {
@@ -71,5 +81,6 @@ require("lazy").setup({
 -- vim.cmd.colorscheme("catppuccin-mocha")
 -- vim.cmd.colorscheme("catppuccin-frappe")
 
--- vim.cmd.colorscheme("onedark_vivid")
-vim.cmd("colorscheme onedark")
+vim.cmd.colorscheme("onedark_vivid")
+-- vim.cmd("colorscheme onedark")
+-- vim.cmd.colorscheme("tokyonight-night")
