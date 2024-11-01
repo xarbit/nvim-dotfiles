@@ -66,4 +66,12 @@ return {
       },
     },
   },
+  -- set logo
+  --  {
+  --    'goolord/alpha-nvim',
+  --    opts = function(_, dashboard)
+  --      local logo = [[ test ]]
+  --      dashboard.section.header.val = vim.split(logo, '\n')
+  --    end,
+  --  },
 }

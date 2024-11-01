@@ -17,7 +17,6 @@ return {
   { import = 'lazyvim.plugins.extras.coding.codeium' },
   { import = 'lazyvim.plugins.extras.lang.git' },
   { import = 'lazyvim.plugins.extras.lang.helm' },
-  { import = 'lazyvim.plugins.extras.lang.nix' },
   { import = 'lazyvim.plugins.extras.lang.python' },
   { import = 'lazyvim.plugins.extras.util.dot' },
   { import = 'lazyvim.plugins.extras.util.gitui' },
